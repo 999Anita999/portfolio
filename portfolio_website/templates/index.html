@@ -1,28 +1,24 @@
 
 {% include "header.html" %}
 
-  <div class="flex-container">
-    <div class="card" style="width: 18rem;">
-      <img src="/static/assets/Anita_blue_front.jpg" class="card-img-top" alt="Anita Gandhi">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-        <p></p>
-        <button class="btn btn-success">Success</button>
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/static/assets/anita_circle.png" class="d-block mx-lg-auto img-fluid" alt="Anita Gandhi" width="400" loading="lazy">
       </div>
-      <div class="card">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Anita Gandhi</h1>
+        <p class="lead">Dynamic professional with 15 years of experience in Research,
+          Performance Analysis, and Business Insights. Skilled in using advanced analytics tools
+          to convert data into strategic insights and driving organizational impact.
+          Expert in sophisticated analyses to address strategic and operational challenges,
+          influencing decision-making and performance.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="{{ url_for('portfolio') }}" class="btn btn-primary btn-lg px-4 me-md-2">Professional</a>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Personal</button>
+        </div>
+      </div>
     </div>
   </div>
 
