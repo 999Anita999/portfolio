@@ -20,6 +20,18 @@ def portfolio():
 def experience():
     return render_template('experience.html', this_year=this_year)
 
+@app.route("/travel")
+def travel():
+    return render_template('travel.html', this_year=this_year)
+
+@app.route("/projects")
+def projects():
+    return render_template('projects.html', this_year=this_year)
+
+@app.route("/chiefs")
+def chiefs():
+    return render_template('chiefs.html', this_year=this_year)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
